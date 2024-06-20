@@ -1,0 +1,143 @@
+.menu-page {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: 2000px 240px;
+}
+
+
+body {
+  background-color: #191f3a;
+}
+
+.wrapper {
+  width: 1500px;
+  margin: 100px auto;
+  margin-top: 20px;
+  border: 3px ridge #ddddddb3;
+  border-radius: 70px;
+}
+
+.wrapper:hover {
+  border: 4px ridge #ddd;
+  box-shadow: 40px 70px 60px #1c2341;
+  overflow: hidden;
+  background-color: rgba(20, 25, 48, 0.443);
+}
+
+.menu-page h5 {
+  margin-left: 200px;
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.944);
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 60px;
+  background-color: #1d2544, 0.3;
+  border-top-right-radius: 70px;
+  border-top-left-radius: 70px;
+}
+
+.title p {
+  text-transform: capitalize;
+  font-size: 50px;
+  color: #eaa023;
+  stop-opacity: inherit;
+  font-family: cursive;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.title p:before {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 3px;
+  background-color: #ffa200;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 80px;
+}
+
+.single-menu {
+  flex-basis: 580px;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid whitesmoke;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.single-menu:nth-child(5),
+.single-menu:nth-child(6) {
+  border-bottom: 0;
+}
+
+.single-menu:hover img {
+  border-radius: 0;
+}
+
+.single-menu:hover p {
+  color: rgb(177, 169, 169);
+}
+
+.menu-content:hover {
+  color: rgb(127, 234, 77);
+}
+
+.single-menu img {
+  max-width: 180px;
+  margin-right: 30px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  padding: 3px;
+  transition: 2s;
+}
+
+.single-menu h4 {
+  text-transform: capitalize;
+  font-size: 22px;
+  border-bottom: 4px dotted #03a9f4;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+
+.single-menu h4 span {
+  float: right;
+  color: rgb(199, 195, 195);
+  font-style: italic;
+}
+
+.menu-content {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
+  color: #23b4f7;
+}
+
+.menu-content p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: bisque;
+  text-align: justify;
+}
+
+::-webkit-scrollbar {
+  width: .6rem;
+  background-color: hsl(202, 16%, 15%);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #191f3a;
+}

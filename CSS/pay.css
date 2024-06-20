@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.row {
+    display: flex;
+    background-color: #0d293d;
+    margin-top: 2%;
+}
+
+/* Create two equal columns col1, col2 that sits next to each other */
+.col1 {
+    border-right: 3px solid #afaaaa;
+    border-start-end-radius: 50px 20px;
+}
+
+.col1,
+.col2 {
+    display: flex;
+    flex: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 25px;
+    font-family: cursive;
+    text-decoration: underline;
+    text-underline-offset: 0.5em;
+    margin-top: 20px;
+}
+
+.input-group1,
+.input-group2 {
+    position: relative;
+    margin: 30px 0;
+}
+
+.input-group1 label,
+.input-group2 label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: white;
+    padding: 0 5px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-group1 input,
+.input-group2 input {
+    width: 450px;
+    height: 50px;
+    font-size: 18px;
+    color: #2ec0ff;
+    padding: 0 10px;
+    background: transparent;
+    border: 1.5px solid #0295d9;
+    outline: none;
+    border-radius: .8rem;
+    font-family: cursive;
+}
+
+.input-group1 input:hover {
+    border-color: rgb(0, 217, 255);
+    border-width: 2.3px;
+}
+
+.input-group1 input:focus {
+    border-color: #0295d9;
+    border-width: 3.5px;
+}
+
+.input-group1 input:focus~label,
+.input-group1 input:valid~label {
+    top: 0;
+    font-size: 12px;
+    background: #0d293d;
+}
+
+.icon-container {
+    color: #e2e7e7;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.input-group2 label {
+    color: #0a9fe4;
+    ;
+}
+
+.input-group2 input {
+    color: #fff;
+    border: 1.5px solid #e2e7e7;
+}
+
+.input-group2 input:hover {
+    border-color: #bdbbbb;
+    border-width: 2.3px;
+}
+
+.input-group2 input:focus {
+    border-color: #e2e7e7;
+    border-width: 3.5px;
+}
+
+.input-group2 input:focus~label,
+.input-group2 input:valid~label {
+    top: 0;
+    font-size: 12px;
+    background: #0d293d;
+}
+
+.submit {
+    width: 100%;
+    background-color: #029deb;
+    font-size: 28px;
+    color: #0d293d;
+    font-weight: bolder;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background: #ff568c;
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: .6rem;
+    background-color: hsl(202, 16%, 15%);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #191f3a;
+}

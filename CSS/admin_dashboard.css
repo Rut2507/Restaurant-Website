@@ -1,0 +1,160 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5;
+}
+
+.topnav,
+.sidenav {
+  position: fixed;
+  background-color: #0a263a;
+  color: white;
+}
+
+.topnav {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1;
+  color: gold;
+  font-size: 20px;
+}
+
+.sidenav {
+  top: 50px;
+  left: 0;
+  width: 210px;
+  height: 100%;
+  padding-top: 90px;
+}
+
+.sidenav a {
+  display: block;
+  color: #dcdcdc;
+  padding: 30px 15px;
+  text-decoration: none;
+  font-family: cursive;
+  font-size: 20px;
+}
+
+.sidenav a:hover {
+  background-color: #485461;
+  color: #2ec0ff;
+}
+
+.main {
+  margin-left: 200px;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.action-button {
+  background-color: gold;
+  color: #0a263a;
+  border: 2px solid #0a263a;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  transition-duration: 0.4s;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.action-button:hover {
+  background-color: #0a263a;
+  color: gold;
+  border: 2px solid gold;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 15px rgba(64, 64, 64, .7);
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+}
+
+th {
+  background-color: #0a263a;
+  color: rgb(236, 210, 62);
+  font-weight: lighter;
+  font-family: cursive;
+}
+
+tr:hover {
+  background-color: #2ec0ff29;
+  font-weight: bolder;
+  color: #0a263a;
+}
+
+.restorebtn:hover {
+  color: white;
+  background-color: green;
+  border: 2px solid green;
+}
+
+.restorebtn,
+.notreplybtn,
+.deletebtn {
+  background-color: white;
+  color: #0a263a;
+  border: 2px solid #0a263a;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  font-weight: bolder;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.notreplybtn:hover {
+  color: white;
+  background-color: red;
+  border: 2px solid red;
+}
+
+.deletebtn:hover {
+  color: white;
+  background-color: grey;
+  border: 2px solid grey;
+}
+
+.replied,
+.successful,
+.reserved {
+  background-color: #d4edda !important;
+}
+
+.not-replied,
+.unsuccessful,
+.unreserved {
+  background-color: #f8d7da !important;
+}
+
+::-webkit-scrollbar {
+  width: .6rem;
+  background-color: hsl(202, 16%, 15%);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #191f3a;
+}

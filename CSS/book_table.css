@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(255, 255, 255, 0.25);
+    background-blend-mode: lighten;
+    overflow: hidden;
+}
+
+.backgr {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff1e;
+    text-decoration: underline;
+    font-size: larger;
+    padding-bottom: 10px;
+}
+
+.title {
+    background-color: #191f3a;
+    height: 200px;
+}
+
+.title p {
+    font-family: cursive;
+    font-size: 35px;
+    padding-top: 70px;
+    text-align: center;
+    color: #eaa023;
+    stop-opacity: inherit;
+    position: relative;
+}
+
+.title p:before {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: #ffa200;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.table_booking {
+    display: grid;
+    grid-template-columns: 500px 820px;
+    margin-right: 600px;
+}
+
+.table_img {
+    width: 620px;
+    height: 360px;
+    margin-top: -80px;
+    z-index: 2;
+}
+
+.Reservation {
+    background: rgba(255, 255, 255, 0.890);
+    height: 500px;
+    margin-left: 70px;
+    margin-top: -150px;
+    ;
+    width: 1050px;
+}
+
+.Reservation h3 {
+    margin-left: 65px;
+    color: #2e393a;
+    text-decoration: underline 3px rgba(0, 217, 255, 0.803);
+    font-family: cursive;
+    padding: 25px 0 43px 0;
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 40px;
+}
+
+.selection {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.selection :hover {
+    background-color: lightblue;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+form select,
+form input {
+    display: block;
+    width: 100%;
+    margin: 20px 15px;
+    padding: 5px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #B1C3C5;
+    border-left: 1px solid #B1C3C5;
+    ;
+}
+
+form input[type=text],
+form input[type=number],
+form input::placeholder,
+select {
+    height: 50px;
+    color: rgb(16, 51, 54);
+    font-size: 16px;
+}
+
+form input[type=submit] {
+    color: #fffffff5;
+    background: rgb(129, 175, 23);
+    padding: 12px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form input[type=submit]:hover {
+    opacity: 0.9;
+}
+
+@media(max-width: 992px) {
+    .table_booking {
+        grid-template-columns: 100%;
+        width: 100vw;
+    }
+
+    .table_img {
+        height: 330px;
+    }
+}
+
+::-webkit-scrollbar {
+    width: .6rem;
+    background-color: hsl(202, 16%, 15%);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #191f3a;
+}
